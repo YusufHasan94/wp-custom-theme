@@ -21,3 +21,20 @@ body{
 img{
     width: 100px;
 }
+
+#nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#nav li{
+    list-style: none;
+}
+
+#nav li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}

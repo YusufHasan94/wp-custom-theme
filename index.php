@@ -20,7 +20,11 @@
                         <img src="<?php echo get_theme_mod('yusuf_logo');?>" alt="logo 1">
                     </a>
                 </div>
-                <div class="col-md-9"></div>
+                <div class="col-md-9 d-flex align-items-center justify-content-center">
+                    <?php
+                        wp_nav_menu( array('theme_location'=>'main_menu', 'menu_id'=> 'nav') );
+                    ?>
+                </div>
             </div>
         </div>
     </div>

@@ -40,3 +40,5 @@ function yusuf_customizer_register($wp_customize){
 } 
 
 add_action('customize_register', 'yusuf_customizer_register');
+
+register_nav_menu( 'main_menu', __('Main Menu', 'customrajtheme'));
