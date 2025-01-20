@@ -37,6 +37,26 @@ function yusuf_customizer_register($wp_customize){
         'section'=> 'yusuf_header_area',
     ) ));
 
+    //menu control
+    $wp_customize->add_section('yusuf_menu_option', array(
+        'title'=>__('Menu Position Option', 'customrajtheme'),
+    ));
+    $wp_customize->add_setting('yusuf_menu_position', array(
+        'default'=> 'right_menu',
+    ));
+    $wp_customize->add_control('yusuf_menu_position', array(
+        'label'=> 'Menu Position',
+        'description'=> 'Change your menu position',
+        'setting'=> 'yusuf_menu_position',
+        'section'=> 'yusuf_menu_option',
+        'type'=> 'radio',
+        'choices'=> array(
+            'right_menu'=> 'Right Menu',
+            'left_menu'=> 'Left Menu',
+            'center_menu'=> 'Center Menu'
+        )
+    ));
+
 } 
 
 add_action('customize_register', 'yusuf_customizer_register');
