@@ -56,6 +56,20 @@ function yusuf_customizer_register($wp_customize){
             'center_menu'=> 'Center Menu'
         )
     ));
+    
+    //footer section
+    $wp_customize->add_section('yusuf_footer_option', array(
+        'title'=>__('Footer Area', 'customrajtheme'),
+    ));
+    $wp_customize->add_setting('yusuf_copyright_section', array(
+        'default'=> '&copy; all rights reserved.',
+    ));
+    $wp_customize->add_control('yusuf_copyright_section', array(
+        'label'=> 'Copyright Text',
+        'description'=> 'Change your copyright message',
+        'setting'=> 'yusuf_copyright_section',
+        'section'=> 'yusuf_footer_option',
+    ));
 
 } 
 

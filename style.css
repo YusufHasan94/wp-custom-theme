@@ -65,3 +65,15 @@ img{
 #header_area.center_menu .col-md-9 ul{
     text-align: center;    
 }
+
+#footer_area{
+    background-color: black;
+    color: white;
+    padding: 10px 0 10px 0;
+}
+#copyright_area{
+    text-align: center;
+}
+#copyright_area p{
+    margin: 0;
+}
